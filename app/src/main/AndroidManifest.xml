@@ -24,6 +24,10 @@
         <activity
             android:name=".FileLoader"
             android:label="@string/title_activity_file_loader"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddShipActivity"
+            android:label="@string/title_activity_add_ship"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

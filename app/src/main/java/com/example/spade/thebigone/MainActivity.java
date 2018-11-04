@@ -99,18 +99,13 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-/*
-***********TO DO***************
-* CREATE A MENU ITEM THAT LAUNCHES FILE LOADER ACTIVITY
-* RERUN APP AND SEE IF FILE LOADS PROPERLY, THEN TRY TO VIEW LIST
 
-
- */
 
 
     }
-    public void onOption2(){
+    public void onOption2(MenuItem i){
         tv.setText("");//needs to open the add cruise activity screen, doesn't need to pass data
+        startActivity(new Intent(this,AddShipActivity.class ));
     }
     public void onOption3(){
         //opens activity that gives option to see details of one specific cruise

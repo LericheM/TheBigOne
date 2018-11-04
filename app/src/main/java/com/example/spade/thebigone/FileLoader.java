@@ -78,6 +78,7 @@ public class FileLoader extends AppCompatActivity {
             while(fsc.hasNext());
             tv2.append((String)"Successful.");
             //use text view to tell successful list add
+            fsc.close();
 
 
 
