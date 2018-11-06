@@ -87,13 +87,10 @@ public class MainActivity extends AppCompatActivity {
         tv.setText("");
         for(a = 0; a <cl.size();a++){
 
-            Log.d("Main","loop"+String.valueOf(a));
 
             if(cl.get(a).getCruiseLine()!=null){
-                Log.d("MainAct","before loop");
                 tv.append(cl.get(a).getCruiseLine()+", ");
                 tv.append(cl.get(a).getShipName()+", ");
-                Log.d("MainAct","mid-loop");
                 tv.append(cl.get(a).getCruiseCode()+", ");
                 tv.append(String.valueOf(cl.get(a).getPrice())+"\n");
             }
