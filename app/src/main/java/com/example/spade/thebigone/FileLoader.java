@@ -17,7 +17,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class FileLoader extends AppCompatActivity {
-    //the activity used to actually load data from a file
+    //the activity used to actually load data from an online file.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +37,8 @@ public class FileLoader extends AppCompatActivity {
 
     }
     public void fileCheck(View view){
-        /*when button is pressed this method will check if the file exists and then call method
-        that will actually add the file data into an array.
+        /*when button is pressed this method will check if the file exists and then fill the
+        list with the ship data from the URL Page
          */
         EditText et = findViewById(R.id.FileInputET);
         String fileName = et.getText().toString();
@@ -54,11 +54,10 @@ public class FileLoader extends AppCompatActivity {
             do{
                 //using a do while because with my implementation of hasnext()
 
-                if( cl.get(i).getCruiseLine() == null){
+                //if( cl.get(i).getCruiseLine() == null){
 
                     //if the ship has a null cruise line, then we know we can replace it
                     cl.get(i).setCruiseLine(fsc.nextLine());
-                    tv2.append(cl.get(i).getCruiseLine()+"\n");
                     cl.get(i).setShipName(fsc.nextLine());
                     cl.get(i).setCruiseCode(fsc.nextLine());
                     cl.get(i).setRegion(fsc.nextLine());
@@ -71,11 +70,12 @@ public class FileLoader extends AppCompatActivity {
                     cl.get(i).setImageURL(fsc.nextLine());
                     i++;
                     //***remember to convert this to a URL object in processing***
-                }
+                //}
 
 
             }
             while(fsc.hasNext());
+            tv2.setText("");
             tv2.append((String)"Successful.");
             //use text view to tell successful list add
             fsc.close();

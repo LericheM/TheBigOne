@@ -6,7 +6,7 @@
     <string name="mainScreenText">Cruises will be displayed here.</string>
     <string name="option1">View CruiseList</string>
     <string name="option9">Load File</string>
-    <string name="fileInputHint">Enter input file here</string>
+    <string name="fileInputHint">Enter URL file here</string>
     <string name="loadButton">Load File</string>
     <string name="title_activity_add_ship">AddShipActivity</string>
 

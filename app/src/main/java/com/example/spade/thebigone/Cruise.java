@@ -5,14 +5,14 @@ import android.net.UrlQuerySanitizer;
 import java.net.URL;
 
 public class Cruise {
-    String cruiseLine;
-    String shipName;
-    String cruiseCode;
-    String region;
-    int cruiseLength;
-    double price;
-    double gratuity;
-    String imageURL;
+    private String cruiseLine;
+    private String shipName;
+    private String cruiseCode;
+    private String region;
+    private int cruiseLength;
+    private double price;
+    private double gratuity;
+    private String imageURL;
 
     public Cruise(String cruiseLine, String shipName, String cruiseCode, String region,
                   int cruiseLength, double price, double gratuity, String imageURL){
