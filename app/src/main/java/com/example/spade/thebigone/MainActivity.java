@@ -28,14 +28,6 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         CruiseList cl;
         //from string list lab, allows to set without having to retrieve in each method
 
@@ -101,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onOption2(MenuItem i){
-        tv.setText("");//needs to open the add cruise activity screen, doesn't need to pass data
+        tv.setText("");//clearing screen for new data to upon returning
         startActivity(new Intent(this,AddShipActivity.class ));
     }
     public void onOption3(){
