@@ -18,4 +18,8 @@
     <!--calculate gratuity-->
     <string name="URLHint">Enter image URL</string>
     <string name="button">Add</string>
+    <string name="addShip">Add a Ship</string>
+    <string name="codeHint">Enter ship code</string>
+    <string name="gratHint">Enter gratuity</string>
+    <string name="bottomView">Status: </string>
 </resources>
