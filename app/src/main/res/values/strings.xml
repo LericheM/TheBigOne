@@ -15,11 +15,13 @@
     <string name="regionHint">Enter the ship region</string>
     <string name="lengthHint">Please enter trip length</string>
     <string name="priceHint">Enter ship Price</string>
-    <!--calculate gratuity-->
     <string name="URLHint">Enter image URL</string>
     <string name="button">Add</string>
     <string name="addShip">Add a Ship</string>
     <string name="codeHint">Enter ship code</string>
     <string name="gratHint">Enter gratuity</string>
     <string name="bottomView">Status: </string>
+    <string name="cruiseViewHint">Enter the cruise code</string>
+    <string name="title_activity_cruise_view">Cruise Viewer</string>
+    <string name="CruiseViewButton">Load cruise</string>
 </resources>
