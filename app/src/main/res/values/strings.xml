@@ -9,5 +9,13 @@
     <string name="fileInputHint">Enter URL file here</string>
     <string name="loadButton">Load File</string>
     <string name="title_activity_add_ship">AddShipActivity</string>
-
+    <string name="appTitle">Add Ship</string>
+    <string name="lineHint">Enter cruise line</string>
+    <string name="nameHint">Enter ship name</string>
+    <string name="regionHint">Enter the ship region</string>
+    <string name="lengthHint">Please enter trip length</string>
+    <string name="priceHint">Enter ship Price</string>
+    <!--calculate gratuity-->
+    <string name="URLHint">Enter image URL</string>
+    <string name="button">Add</string>
 </resources>
