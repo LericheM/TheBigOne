@@ -93,8 +93,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onOption2(MenuItem i){
-        tv.setText("");//clearing screen for new data to upon returning
         startActivity(new Intent(this,AddShipActivity.class ));
+        Log.d("menu item","after activity start");
     }
     public void onOption3(){
         //opens activity that gives option to see details of one specific cruise

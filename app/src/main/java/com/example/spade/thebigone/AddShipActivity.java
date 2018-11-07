@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,6 +32,8 @@ public class AddShipActivity extends AppCompatActivity {
         EditText imageET = findViewById(R.id.shipImage);
         EditText gratET = findViewById(R.id.shipGrat);
 
+        Log.d("press","after initializing");
+
         String line = lineET.getText().toString();
         String name = nameET.getText().toString();
         String code = codeEt.getText().toString();
@@ -49,6 +52,7 @@ public class AddShipActivity extends AppCompatActivity {
         }catch(Exception e){
             tv.append(e.toString());
         }
+        tv.append("Success");
 
     }
 
