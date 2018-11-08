@@ -25,4 +25,5 @@
     <string name="cruiseViewHint">Enter the cruise code</string>
     <string name="title_activity_cruise_view">Cruise Viewer</string>
     <string name="CruiseViewButton">Load cruise</string>
+    <string name="title_activity_price_change">Price Correction</string>
 </resources>
