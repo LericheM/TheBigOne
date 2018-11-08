@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void onOption1(MenuItem i){
-        //code for viewing list
+        //Simple method to view updated list and write it to main TV
         int a;
 
         TextView tv = findViewById(R.id.MainScreenText);
@@ -93,11 +93,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onOption2(MenuItem i){
-        startActivity(new Intent(this,AddShipActivity.class ));
-        Log.d("menu item","after activity start");
+        startActivity(new Intent(this,AddShipActivity.class));
     }
-    public void onOption3(){
-        //opens activity that gives option to see details of one specific cruise
+    public void onOption3(MenuItem i){
+        startActivity(new Intent(this,CruiseViewActivity.class));
     }
     public void onOption4(){
         //changes the price of a cruise.

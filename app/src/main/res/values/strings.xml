@@ -3,6 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_file_loader">File Load</string>
     <string name="option2">Add Cruise</string>
+    <string name="option3">Cruise details</string>
     <string name="mainScreenText">Cruises will be displayed here.</string>
     <string name="option1">View CruiseList</string>
     <string name="option9">Load File</string>

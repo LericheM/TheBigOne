@@ -7,22 +7,20 @@
         android:title="@string/option1"
         android:onClick = "onOption1">
     </item>
-   <!-- <item
-        android:id="@+id/addCruise"
-        android:orderInCategory="100"
-        android:title="@string/option2"
-        android:onClick="onOption2"
-        app:showAsAction="ifRoom|withText"/>-->
-
-    <item
-        android:id="@+id/fileLoad"
-        android:title="@string/option9"
-        android:onClick="onOption9"/>
 
     <item
         android:id="@+id/addShip"
-        android:title="@string/addShip"
-        android:onClick="onOption2"/>
+        android:onClick="onOption2"
+        android:title="@string/addShip" />
+    <item
+        android:id="@+id/ViewCruise"
+        android:onClick="onOption3"
+        android:title="@string/option3" />
+    <item
+        android:id="@+id/fileLoad"
+        android:onClick="onOption9"
+        android:title="@string/option9" />
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="101"
