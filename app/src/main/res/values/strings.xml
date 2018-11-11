@@ -27,5 +27,6 @@
     <string name="title_activity_cruise_view">Cruise Viewer</string>
     <string name="CruiseViewButton">Load cruise</string>
     <string name="title_activity_price_change">Price Correction</string>
-    <string name="priceChange">Change Price</string>
+    <string name="priceChange">New Price</string>
+    <string name="priceChangeButton">Change</string>
 </resources>

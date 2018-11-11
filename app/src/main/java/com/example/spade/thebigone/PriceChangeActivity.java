@@ -20,7 +20,7 @@ public class PriceChangeActivity extends AppCompatActivity {
 
 
     }
-    public void priceChange(){
+    public void priceChange(View view){
         /*this method takes in a ship code like the view content
         but instead changes the price of the ship ticket
         boring some code from cruise view
