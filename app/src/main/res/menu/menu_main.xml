@@ -4,9 +4,8 @@
     tools:context="com.example.spade.thebigone.MainActivity">
     <item
         android:id="@+id/viewList"
-        android:title="@string/option1"
-        android:onClick = "onOption1">
-    </item>
+        android:onClick="onOption1"
+        android:title="@string/option1"></item>
 
     <item
         android:id="@+id/addShip"
@@ -27,11 +26,16 @@
 
     <item
         android:id="@+id/RemoveShip"
-        android:title="@string/option5"
-        android:onClick="onOption5" />
+        android:onClick="onOption5"
+        android:title="@string/option5" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="101"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/MostExpensive"
+        android:layout_height="wrap_content"
+        android:title="@string/option6"
+        android:onClick="onOption6"/>
 </menu>

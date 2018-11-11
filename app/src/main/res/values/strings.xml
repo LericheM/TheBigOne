@@ -31,4 +31,5 @@
     <string name="priceChangeButton">Change</string>
     <string name="title_activity_remove_ship">Delete Cruise</string>
     <string name="option5">Delete Cruise</string>
+    <string name="option6">Most Expensive</string>
 </resources>

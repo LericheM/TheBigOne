@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     public TextView tv;
@@ -106,8 +108,43 @@ public class MainActivity extends AppCompatActivity {
     public void onOption5(MenuItem i){
         startActivity(new Intent(this,RemoveShip.class));
     }
-    public void onOption6(){
+    public void onOption6(MenuItem i){
         //displays most expensive cruise, doesn't need new activity
+        int g;
+        CruiseList cl = CruiseList.getInstance();
+        Cruise thisShip;
+        //the next two variables aren't necessary but it makes it easier for me to read
+        Double highestPrice = 0.0;
+        Double currentPrice;
+        Cruise pricey = new Cruise();
+        TextView tv = findViewById(R.id.MainScreenText);
+        String outputString;
+        String pattern = "####.00";
+        DecimalFormat numOut = new DecimalFormat(pattern);
+
+        int shipLength = 0;
+        for(g = 0; g <cl.size();g++){
+            //this method is the loop that gets our highest price from the cruise list
+            thisShip = cl.get(g);
+            currentPrice = thisShip.getPrice();
+            if(currentPrice>highestPrice) {
+                highestPrice = currentPrice;
+                shipLength = cl.get(g).getCruiseLength();
+                pricey = cl.get(g);
+            }
+        }
+        if(pricey!=null){
+            double totalCost = highestPrice/shipLength;
+            //format the number before adding it to the string
+            String format = numOut.format(totalCost);
+
+            outputString = pricey.getCruiseLine()+", "+pricey.getShipName()+", "+
+                    pricey.getCruiseCode()+", "+format+" per night.";
+            tv.setText(outputString);
+        }
+
+
+
     }
     public void onOption7(){
         //shows average cruise length
