@@ -6,6 +6,7 @@
     <string name="option3">Cruise details</string>
     <string name="mainScreenText">Cruises will be displayed here.</string>
     <string name="option1">View CruiseList</string>
+    <string name="option4">Price Changer</string>
     <string name="option9">Load File</string>
     <string name="fileInputHint">Enter URL file here</string>
     <string name="loadButton">Load File</string>
@@ -26,4 +27,5 @@
     <string name="title_activity_cruise_view">Cruise Viewer</string>
     <string name="CruiseViewButton">Load cruise</string>
     <string name="title_activity_price_change">Price Correction</string>
+    <string name="priceChange">Change Price</string>
 </resources>

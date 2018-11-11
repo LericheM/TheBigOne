@@ -17,6 +17,10 @@
         android:onClick="onOption3"
         android:title="@string/option3" />
     <item
+        android:id="@+id/priceChanger"
+        android:onClick="onOption4"
+        android:title="@string/option4" />
+    <item
         android:id="@+id/fileLoad"
         android:onClick="onOption9"
         android:title="@string/option9" />

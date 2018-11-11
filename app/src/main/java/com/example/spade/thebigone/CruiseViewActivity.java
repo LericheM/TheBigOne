@@ -36,9 +36,8 @@ public class CruiseViewActivity extends AppCompatActivity {
         String badInput = "Code not valid.";
         String output;
 
-        for(int i = 0; i<cruiseLst.size()-1;i++){
+        for(int i = 0; i<cruiseLst.size();i++){
             Cruise currShip = cruiseLst.get(i);
-            Log.d("cdd",cruiseLst.get(i).getShipName());
             if (currShip.getCruiseCode().equals(lookup)){
                 imageLink = currShip.getImageURL();
                 flag = true;

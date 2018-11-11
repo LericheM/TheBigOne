@@ -24,8 +24,6 @@ public class FileLoader extends AppCompatActivity {
         setContentView(R.layout.activity_file_loader);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
     }
     public void fileCheck(View view){
         /*when button is pressed this method will check if the file exists and then fill the

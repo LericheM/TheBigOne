@@ -98,8 +98,9 @@ public class MainActivity extends AppCompatActivity {
     public void onOption3(MenuItem i){
         startActivity(new Intent(this,CruiseViewActivity.class));
     }
-    public void onOption4(){
+    public void onOption4(MenuItem i){
         //changes the price of a cruise.
+        startActivity(new Intent(this,PriceChangeActivity.class));
     }
     public void onOption5(){
         //removes a cruise from the list
