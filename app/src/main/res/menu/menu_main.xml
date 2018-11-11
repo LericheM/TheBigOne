@@ -26,6 +26,10 @@
         android:title="@string/option9" />
 
     <item
+        android:id="@+id/RemoveShip"
+        android:title="@string/option5"
+        android:onClick="onOption5" />
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="101"
         android:title="@string/action_settings"

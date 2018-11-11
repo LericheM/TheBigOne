@@ -39,7 +39,11 @@
         <activity
             android:name=".PriceChangeActivity"
             android:label="@string/title_activity_price_change"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RemoveShip"
+            android:label="@string/title_activity_remove_ship"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

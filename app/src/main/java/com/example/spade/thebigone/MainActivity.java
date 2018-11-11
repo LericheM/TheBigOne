@@ -93,17 +93,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onOption2(MenuItem i){
+
         startActivity(new Intent(this,AddShipActivity.class));
     }
     public void onOption3(MenuItem i){
+
         startActivity(new Intent(this,CruiseViewActivity.class));
     }
     public void onOption4(MenuItem i){
-        //changes the price of a cruise.
         startActivity(new Intent(this,PriceChangeActivity.class));
     }
-    public void onOption5(){
-        //removes a cruise from the list
+    public void onOption5(MenuItem i){
+        startActivity(new Intent(this,RemoveShip.class));
     }
     public void onOption6(){
         //displays most expensive cruise, doesn't need new activity

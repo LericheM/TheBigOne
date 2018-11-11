@@ -29,4 +29,6 @@
     <string name="title_activity_price_change">Price Correction</string>
     <string name="priceChange">New Price</string>
     <string name="priceChangeButton">Change</string>
+    <string name="title_activity_remove_ship">Delete Cruise</string>
+    <string name="option5">Delete Cruise</string>
 </resources>
