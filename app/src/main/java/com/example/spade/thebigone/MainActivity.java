@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
             if(currentPrice>highestPrice) {
                 highestPrice = currentPrice;
                 shipLength = cl.get(g).getCruiseLength();
+                //last we save the ship since it is the most expensive for our text output later
                 pricey = cl.get(g);
             }
         }
@@ -159,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
             cruise list can have empty ship items which i've been ignoring
              */
             if(cl.get(m).getCruiseLine()!=null){
+                //use .getCruiseLine to check if our ship exists
                 sum+= cl.get(m).getCruiseLength();
                 divisor++;
             }
@@ -168,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
         DecimalFormat decimalFormat = new DecimalFormat(pattrn);
         String avgStr = decimalFormat.format(average);
         if(average>0.0) {
+            //the conditional exists as a fail safe if this action is done without a list
             String out = "The average length of all cruises is: " + avgStr + " days.";
             textView.setText(out);
         }
@@ -177,14 +180,62 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    public void onOption8(){
-        //custom option, read email u sent to logan
+    public void onOption8(MenuItem i ){
+        /* compare the ratio of ship name length to price, and the
+         ship with the highest amount of name length per dollar
+         is the most luxurious, because the money's all in the name.
+         */
+        Cruise luxShip = new Cruise();
+        CruiseList cl = CruiseList.getInstance();
+        int iterator;
+        double luxMeter = 0;
+        double tempLux;
+        int shipNameLength;
+        TextView tv = findViewById(R.id.MainScreenText);
+
+        for(iterator = 0; iterator <cl.size();iterator++){
+            if(luxShip.getCruiseLine() == null) {
+                /*this conditional is solely for the first loop of the for loop
+                since i initialized the luxurious ship to be an empty ship object
+                also we don't need to make any comparisons because we dont have any
+                data to compare to until the second loop
+                 */
+                luxShip = cl.get(iterator);
+                shipNameLength = luxShip.getShipName().length();
+                luxMeter = shipNameLength/luxShip.getPrice();
+                //first loo
+                continue;
+            }
+            /*here is where the ratio is actually calculated, we then do the comparison
+            and will replace the ship so we can access it for output later.
+             */
+            shipNameLength = cl.get(iterator).getCruiseLength();
+            tempLux = shipNameLength/cl.get(iterator).getPrice();
+
+            if(tempLux>luxMeter){
+                luxShip = cl.get(iterator);
+            }
+
+        }
+        String output;
+        if(luxMeter!= 0){
+            output = "The most luxurious ship is: "+
+                    luxShip.getShipName()+ " from: "+
+                    luxShip.getCruiseLine();
+            tv.setText(output);
+        }
+        else{
+            output = "No valid data!";
+            tv.setText(output);
+        }
+
     }
     public void onOption9(MenuItem i){
-        //load list from file
+        //load list from online file
         startActivity(new Intent(this, FileLoader.class));
     }
-    public void onOption(){
+    public void onOption10(MenuItem i ){
         //save list to file
+
     }
 }

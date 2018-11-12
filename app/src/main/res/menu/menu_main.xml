@@ -35,7 +35,7 @@
         android:title="@string/option5" />
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="102"
+        android:orderInCategory="103"
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
@@ -43,4 +43,9 @@
         android:layout_height="wrap_content"
         android:title="@string/option6"
         android:onClick="onOption6"/>
+    <item
+        android:id="@+id/CustomOption"
+        android:orderInCategory="102"
+        android:onClick="onOption8"
+        android:title="@string/option8" />
 </menu>
