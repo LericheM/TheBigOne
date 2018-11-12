@@ -1,3 +1,17 @@
+//////////////////////////////////////////////////////////
+//                                                      //
+//                                                      //
+// Mathew Leriche                                       //
+// IT114, Section 003                                   //
+// Dr. Halper                                           //
+// App Project #1                                       //
+// Nov. 8, 2018                                         //
+//                                                      //
+// This app is designed to act as a travel              //
+// manager for cruise ships,                            //
+// each cruise ship has its own data, images, prices,   //
+// all these data items can be manipulated and analyzed.//
+//////////////////////////////////////////////////////////
 package com.example.spade.thebigone;
 
 import android.content.Intent;
