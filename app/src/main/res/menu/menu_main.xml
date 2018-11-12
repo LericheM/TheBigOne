@@ -5,7 +5,7 @@
     <item
         android:id="@+id/viewList"
         android:onClick="onOption1"
-        android:title="@string/option1"></item>
+        android:title="@string/option1"/>
 
     <item
         android:id="@+id/addShip"
@@ -25,12 +25,17 @@
         android:title="@string/option9" />
 
     <item
+        android:id="@+id/AverageLen"
+        android:orderInCategory="101"
+        android:title="@string/option7"
+        android:onClick="onOption7"/>
+    <item
         android:id="@+id/RemoveShip"
         android:onClick="onOption5"
         android:title="@string/option5" />
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="101"
+        android:orderInCategory="102"
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item

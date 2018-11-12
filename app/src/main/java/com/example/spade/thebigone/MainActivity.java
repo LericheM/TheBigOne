@@ -146,8 +146,36 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    public void onOption7(){
+    public void onOption7(MenuItem i){
         //shows average cruise length
+        CruiseList cl = CruiseList.getInstance();
+        Double sum = 0.0;
+        int m;
+        int divisor = 0;
+        TextView textView = findViewById(R.id.MainScreenText);
+
+        for (m = 0; m < cl.size();m++){
+            /*i have to manually add the divisor because the
+            cruise list can have empty ship items which i've been ignoring
+             */
+            if(cl.get(m).getCruiseLine()!=null){
+                sum+= cl.get(m).getCruiseLength();
+                divisor++;
+            }
+        }
+        Double average = sum/divisor;
+        String pattrn = "####.00";
+        DecimalFormat decimalFormat = new DecimalFormat(pattrn);
+        String avgStr = decimalFormat.format(average);
+        if(average>0.0) {
+            String out = "The average length of all cruises is: " + avgStr + " days.";
+            textView.setText(out);
+        }
+        else{
+            String output = "Please add more ships to compare.";
+            textView.setText(output);
+        }
+
     }
     public void onOption8(){
         //custom option, read email u sent to logan

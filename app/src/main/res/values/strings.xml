@@ -32,4 +32,5 @@
     <string name="title_activity_remove_ship">Delete Cruise</string>
     <string name="option5">Delete Cruise</string>
     <string name="option6">Most Expensive</string>
+    <string name="option7">Average Length</string>
 </resources>
