@@ -236,6 +236,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onOption10(MenuItem i ){
         //save list to file
+        startActivity(new Intent(this,FileSave.class));
 
     }
 }

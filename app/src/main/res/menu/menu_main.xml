@@ -35,7 +35,7 @@
         android:title="@string/option5" />
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="103"
+        android:orderInCategory="104"
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
@@ -48,4 +48,9 @@
         android:orderInCategory="102"
         android:onClick="onOption8"
         android:title="@string/option8" />
+    <item
+        android:id="@+id/SaveOption"
+        android:orderInCategory="103"
+        android:title="@string/title_activity_file_save"
+        android:onClick="onOption10"/>
 </menu>

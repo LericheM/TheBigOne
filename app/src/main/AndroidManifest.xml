@@ -4,6 +4,8 @@
     package="com.example.spade.thebigone">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
     <application
         android:name=".MyApplication"
@@ -43,6 +45,10 @@
         <activity
             android:name=".RemoveShip"
             android:label="@string/title_activity_remove_ship"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FileSave"
+            android:label="@string/title_activity_file_save"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
